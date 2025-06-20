@@ -58,7 +58,7 @@ export default async function DashboardPage() {
             <h2 className="text-xl font-semibold text-gray-900">Posted Jobs</h2>
             <Link
               href="/jobs/post"
-              className="text-indigo-600 hover:text-indigo-700 font-medium"
+              className="text-stone-900 hover:text-stone-600 font-medium"
             >
               Post New Job
             </Link>
@@ -99,7 +99,7 @@ export default async function DashboardPage() {
                   <div className="mt-4 flex justify-end space-x-4">
                     <Link
                       href={`/jobs/${job.id}`}
-                      className="text-indigo-600 hover:text-indigo-700 text-sm font-medium"
+                      className="text-stone-900 hover:text-stone-600 text-sm font-medium"
                     >
                       View Job
                     </Link>

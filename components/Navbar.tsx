@@ -1,7 +1,6 @@
 "use client";
 
 import Link from "next/link";
-import Image from "next/image";
 import { useSession } from "next-auth/react";
 import { logout } from "@/lib/auth";
 
@@ -11,17 +10,11 @@ export default function Navbar() {
     <nav className="bg-white shadow-sm">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16">
-          <div className="flex">
-            <Link href="/" className="flex items-center">
-              <Image
-                src="/logo.png"
-                alt="Job Board Logo"
-                width={40}
-                height={40}
-                className="h-8 w-auto"
-              />
-              <span className="ml-2 text-xl font-semibold text-gray-900">
-                Job Board
+          <div className="text-stone-900 flex items-center">
+            <Link href="/">
+              &Gamma;&Delta;&Beta;
+              <span className="ml-2 font-semibold text-stone-900">
+                jobs
               </span>
             </Link>
           </div>
@@ -31,34 +24,30 @@ export default function Navbar() {
               href="/jobs"
               className="text-gray-600 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium"
             >
-              Browse Jobs
+              Browse
             </Link>
             {session ? (
               <>
                 <Link
                   href="/jobs/post"
-                  className="text-gray-600 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium"
-                >
-                  Post a Job
+                  className="text-gray-600 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium">
+                  Post
                 </Link>
                 <Link
                   href="/dashboard"
-                  className="text-gray-600 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium"
-                >
-                  Dashboard
+                  className="text-gray-600 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium">
+                  Board
                 </Link>
                 <button
                   onClick={logout}
-                  className="text-gray-600 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium"
-                >
+                  className="text-gray-600 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium">
                   Sign Out
                 </button>
               </>
             ) : (
               <Link
                 href="/auth/signin"
-                className="text-gray-600 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium"
-              >
+                className="text-gray-600 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium">
                 Sign In
               </Link>
             )}
