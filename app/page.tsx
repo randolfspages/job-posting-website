@@ -17,9 +17,9 @@ export default async function Home() {
   });
 
   return (
-    <div className="space-y-12">
+    <div className="space-y-12 mt-10">
       {/* Hero Section */}
-      <section className="text-center py-20 bg-white rounded-lg shadow-sm">
+      <section className="text-center py-18 bg-white rounded-lg shadow-sm">
         <h1 className="text-4xl font-bold text-gray-900 mb-4">
           Find Your Dream Job
         </h1>
