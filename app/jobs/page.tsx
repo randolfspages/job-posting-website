@@ -35,9 +35,9 @@ export default async function JobsPage({
   });
 
   return (
-    <div className="space-y-8">
-      <div className="bg-white p-6 rounded-lg shadow-sm">
-        <h1 className="text-2xl font-bold text-gray-900 mb-6">Find Jobs</h1>
+    <div className="space-y-8 mt-12">
+      <div className="bg-white p-4 rounded-lg shadow-sm">
+        <h1 className="text-2xl font-bold text-gray-900 p-4 text-center">Find Jobs</h1>
         <form className="grid gap-4 md:grid-cols-3">
           <input
             type="text"
@@ -47,8 +47,7 @@ export default async function JobsPage({
           />
           <select
             name="type"
-            className="border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-indigo-500 text-gray-900"
-          >
+            className="border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-indigo-500 text-gray-900">
             <option value="">All Types</option>
             <option value="Full-time">Full-time</option>
             <option value="Part-time">Part-time</option>
@@ -59,12 +58,10 @@ export default async function JobsPage({
             type="text"
             name="location"
             placeholder="Location"
-            className="border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-indigo-500 text-gray-900"
-          />
+            className="border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-indigo-500 text-gray-900"/>
           <button
             type="submit"
-            className="md:col-span-3 bg-indigo-600 text-white px-4 py-2 rounded-md hover:bg-indigo-700"
-          >
+            className="md:col-span-3 bg-black text-white px-4 py-2 rounded-md hover:bg-stone-400 hover:text-black">
             Search
           </button>
         </form>
@@ -102,8 +99,7 @@ export default async function JobsPage({
               </span>
               <Link
                 href={`/jobs/${job.id}`}
-                className="text-indigo-600 hover:text-indigo-700 font-medium"
-              >
+                className="text-blue-500 hover:text-blue-300 font-medium">
                 View Details →
               </Link>
             </div>

@@ -28,7 +28,7 @@ export default async function Home() {
         </p>
         <Link
           href="/jobs"
-          className="bg-stone-900 text-white px-6 py-3 rounded-md text-lg font-medium hover:bg-indigo-700">
+          className="bg-stone-900 text-white px-6 py-3 rounded-md text-lg font-medium hover:bg-stone-400 hover:text-black">
           Browse Jobs
         </Link>
       </section>

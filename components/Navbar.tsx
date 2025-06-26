@@ -7,15 +7,15 @@ import { logout } from "@/lib/auth";
 export default function Navbar() {
   const { data: session } = useSession();
   return (
-    <nav className="bg-white shadow-sm">
+    <nav className="bg-white shadow-sm fixed left-0 right-0 overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16">
           <div className="text-stone-900 flex items-center">
             <Link href="/">
-              &Gamma;&Delta;&Beta;
-              <span className="ml-2 font-semibold text-stone-900">
+              <span className="font-semibold">&Gamma;&Delta;&Beta;</span>
+              <small className="ml-2 font-semibold text-stone-900">
                 jobs
-              </span>
+              </small>
             </Link>
           </div>
 
